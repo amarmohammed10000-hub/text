@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Tutorial</title>
+
+<style>
+body {
+        background-image: url("settings.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Building My First HTML Website</h1>
+
+<p>
+This tutorial explains the HTML concepts used in my website and the
+purpose of each section of code.
+</p>
+
+<div class="section">
+<h2>1. HTML Document Structure</h2>
+
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+</pre>
+
+<p>
+The <strong>DOCTYPE</strong> declaration tells the browser that the
+document uses HTML5.
+The <strong>html</strong> element is the container of the webpage.
+</p>
+
+</div>
+
+<div class="section">
+<h2>2. Head Section</h2>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+    content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Amars Page&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+
+
+<p>
+The head section contains information about the webpage.
+</p>
+
+<ul>
+<li>UTF-8 supports special characters.</li>
+<li>Viewport makes the site responsive.</li>
+<li>Title appears in the browser tab.</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>3. Background Image Styling</h2>
+
+<pre>
+&lt;style&gt;
+body {
+    background-image: url("settings.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+&lt;/style&gt;
+</pre>
+
+<p>
+This CSS adds a background image, stretches it across the page,
+prevents repetition, and centers it.
+</p>
+
+</div>
+
+<div class="section">
+<h2>4. Main Heading</h2>
+
+<pre>
+&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+</pre>
+<p>
+The h1 element creates the main heading of the page.
+</p>
+
+</div>
+
+<div class="section">
+<h2>5. Navigation Links</h2>
+
+<pre>
+&lt;a href="index.html"&gt;Home&lt;/a&gt;
+&lt;a href="index2.html"&gt;Schedule&lt;/a&gt;
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+&lt;a href="Contact.html"&gt;Contact&lt;/a&gt;
+</pre>
+
+
+<p>
+Anchor tags create hyperlinks that allow users to move between pages.
+</p>
+
+</div>
+
+<div class="section">
+<h2>6. Horizontal Rule</h2>
+
+
+<pre>
+&lt;hr&gt;
+</pre>
+
+
+<p>
+The hr element creates a horizontal line used to separate content.
+</p>
+
+</div>
+
+<div class="section">
+<h2>7. Miscellaneous Elements</h2>
+
+<pre>
+&lt;h1&gt;&lt;ins&gt;Introduction&lt;/ins&gt;&lt;/h1&gt;
+
+&lt;p&gt;
+This is &lt;b&gt;Web-programming&lt;/b&gt; first website
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;q&gt;Basic Html code implementation&lt;/q&gt;
+&lt;/p&gt;
+&lt;abbr title = "learn" &gt; hover &lt;/abbr&gt;
+&lt;delete&gt;This text is deleted&lt;/delete&gt;
+&lt;ins&gt;This text is inserted&lt;/ins&gt;
+&lt;u&gt;This text is underlined&lt;/u&gt;
+&lt;sub&gt;This text is subscript&lt;/sub&gt;
+&lt;sup&gt;This text is superscript&lt;/sup&gt;
+
+</pre>
+
+<p>
+This section demonstrates:
+</p>
+
+<ul>
+<li>Headings</li>
+<li>Paragraphs</li>
+<li>Bold text</li>
+<li>Inline quotations</li>
+<li>Underlined text</li>
+<li>Abbreviations with tooltips</li>
+</ul>
+<br>
+In demonstration, the <ins><strong>ins</strong></ins> tag underlines text.
+The <b>b</b> tag makes text bold, and the <q><strong>q</strong></q> tag formats inline quotations.
+The <strong>abbr</strong> <abbr title="abbr">hover</abbr> tag provides a tooltip when hovered over.
+The <strong>p</strong> tag defines paragraphs of text. 
+The <strong><del>delete</del></strong> tag indicates deleted text.
+The <strong><u>underlined</u></strong> tag underlines text.
+The <strong><sub>subscript</sub></strong> tag creates subscript text.
+The <strong><sup>superscript</sup></strong> tag creates superscript text.
+
+</div>
+
+<div class="section">
+<h2>8. Displaying Images</h2>
+
+<pre>
+&lt;figure&gt;
+
+&lt;img src="image7.jpg"
+alt="Error text"
+width="500"
+height="600"&gt;
+
+&lt;figcaption&gt;
+This is an image
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+Example of an image with a caption.
+<figure>
+    <img src="image7.jpg"
+         alt="Historic canal city illustration"
+         width="500"
+         height="600">
+    <figcaption>
+        Historic canal city illustrastion
+    </figcaption>
+</figure>
+</pre>
+
+
+<p>
+The image tag displays an image while the figure and figcaption
+provide a caption.
+</p>
+
+</div>
+
+<div class="section">
+<h2>9. Audio Player</h2>
+
+
+<pre>
+&lt;audio controls&gt;
+
+&lt;source src="audio.mp3"
+type="audio/mp3"&gt;
+
+&lt;/audio&gt;
+</pre>
+<p>
+The audio element allows users to play sound files.
+</p>
+Example of an audio player:
+    <audio controls autoplay loop>
+        <source src="audio.mp3" type="audio/mp3"> 
+    </audio>
+    <pre>
+</div>
+
+<div class="section">
+<h2>10. Video Player</h2>
+
+
+<pre>
+&lt;video width="500"
+controls
+autoplay
+muted
+loop&gt;
+
+&lt;source src="video.mp4"
+type="video/mp4"&gt;
+
+&lt;/video&gt;
+</pre>
+
+
+<p>
+The video element displays video content.
+</p>
+Example of a video player:
+    <video width="500" controls autoplay muted loop>
+        <source src="video.mp4" type="video/mp4"> 
+    </video>
+
+<ul>
+<li>controls = Play/Pause buttons</li>
+<li>autoplay = Starts automatically</li>
+<li>muted = Starts without sound</li>
+<li>loop = Repeats continuously</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>11. Google Maps Embed</h2>
+
+
+<pre>
+&lt;iframe
+src="Google Maps URL"
+width="600"
+height="450"&gt;
+&lt;/iframe&gt;
+</pre>
+
+<p>
+The iframe embeds a Google Map directly into the webpage.
+</p>
+Example of a Google Map embed:
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4853.624037005969!2d38.75838807586889!3d9.030625791030603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85f0f9a06d85%3A0x4331551f2e0d81cb!2sAmerican%20College%20of%20Technology%20(ACT)%2C%20Addis%20Ababa%2C%20Ethiopia!5e1!3m2!1sen!2set!4v1793820341045!5m2!1sen!2set" 
+        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</div>
+
+<div class="section">
+<h2>12. YouTube Embed</h2>
+
+
+<pre>
+&lt;iframe
+width="560"
+height="315"
+src="YouTube URL"&gt;
+&lt;/iframe&gt;
+</pre>
+
+<p>
+The iframe can also embed YouTube videos inside the webpage.
+</p>
+Example of a YouTube embed:
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/zkg_EILRgkI?si=q5efHYEWx1ujy_uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+<div class="section">
+<h2>13.Navigation Tag</h2>
+
+<pre>
+&lt;nav&gt;
+    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html"&gt;About&lt;/a&gt;
+    &lt;a href="Contact.html"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+</pre>
+
+<p>
+The nav element groups navigation links together.
+</p>
+
+</div>
+<div class="section">
+<h2>14. Lists</h2>
+
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Create HTML&lt;/li&gt;
+    &lt;li&gt;Add CSS&lt;/li&gt;
+    &lt;li&gt;Publish Website&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<p>
+The ul element creates an unordered list, the ol element creates an ordered list,
+and the li element defines a list item.
+</p>
+
+</div>
+<div class="section">
+<h2>15. Main Tag</h2>
+
+<pre>
+&lt;main&gt;
+
+Website content goes here
+
+&lt;/main&gt;
+</pre>
+
+<p>
+The main element contains the primary content of the webpage.
+</p>
+
+</div>
+<div class="section">
+<h2>16. Footer Tag</h2>
+
+<pre>
+&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2026 amr&lt;/p&gt;
+&lt;/footer&gt;
+</pre>
+
+<p>
+The footer element contains information shown at the bottom of the page.
+</p>
+
+</div>

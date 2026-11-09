@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <h1>Registration Page</h1>
+    <p>This is the registration page.</p>
+    <h1>This is a registration form</h1>
+    <form action="/register" method="">
+        <label for="fullname">FULL-Name:</label>
+        <input type="text" name="fullname">
+        <br>
+        <label for ="Phone">Phone:</label>
+        <input type="number" name="phone">
+        <br>
+        <label for ="Yofstudy">Year of Study:</label>
+        <input type="radio" name="Yofstudy" value="1styear"> 1styear
+        <input type="radio" name="Yofstudy" value="2ndyear"> 2nd year
+        <input type="radio" name="Yofstudy" value="3rd year"> 3rd year
+        <input type="radio" name="Yofstudy" value="4th year"> 4th year
+        <br>
+        <Label for ="interests">Interests</Label>
+        <input  type="checkbox" name="software dev" >Software dev
+        <input  type="checkbox" name="appdev"> App dev
+        <input  type="checkbox" name="machine"> machine
+
+        <br>
+        <Label for ="email">Email</Label>
+        <input type="email"email="Email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+        <br>
+        <label for="Department">Department:</label>
+        <select name="Department" id="">
+            <option value="Computer science ">Computer science</option>
+            <option value="software">Business and Management</option>
+        </select>
+        <br>
+        <Label for="why join">Why joined</Label>
+        <textarea id="Message" name="Message" > </textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

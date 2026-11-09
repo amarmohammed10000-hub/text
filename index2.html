@@ -3,66 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amars Page</title>
+    <title>HTML Tutorial vol2</title>
+    <style>
+body {
+        background-image: url("settings.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+</style>
 </head>
 <body>
-        <h2> Making bunna</h2>
-    <ol>
-        <li>get coffee</li>
-        <li>get water</li>
-        <li>get sugar</li>
-        <li>get milk</li>
-        <ul>
-            <li>boil water</li>
-            <li>mix sugar</li>
-            <li>mix milk</li>
-        </ul>
-    </ol>
-    <h2> Making bunna</h2>
-    <ol>
-        <li>get coffee</li>
-        <li>get water</li>
-        <li>get sugar</li>
-        <li>get milk</li>
-    </ol>
-    <table border="1" bordercolor="Green">
-        <caption><B>My Table</B></caption>
-        <thead>
-            <tr>
-                <th><B>Student</B></th>
-                <th><B>course</B></th>
-                <th><B>Marks</B></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2">Amar</td>
-                <td>Math</td>
-                <td>85</td>
-            </tr>
-            <tr>
-                <td>Science</td>
-                <td>75</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Abel</td>
-                <td>English</td>
-                <td>90</td>
-            </tr>
-            <tr>
-                <td>Math</td>
-                <td>80</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2">Average</td>
-                <td>82.5</td>
-            </tr>
-        </tfoot>
+    <h1>Building My First HTML Website vol2</h1>
+    <div class="section">
+        <p>
+        This tutorial explains the HTML concepts used in my website and the
+        purpose of each section of code.
+        </p>
 
-    </table>
-    <table border="1" bordercolor="Green">
+
+    
+    
+    </div>
+    <div class="section">
+
+<h2>1. Tables</h2>
+
+<pre>
+&lt;table border="1"&gt;
+
+&lt;caption&gt;My Time Table&lt;/caption&gt;
+
+&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Time&lt;/th&gt;
+        &lt;th&gt;Monday&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2:30-4:30&lt;/td&gt;
+        &lt;td&gt;Web Programming&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+
+&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;Total Classes&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;
+
+&lt;/table&gt;
+</pre>
+
+<p>
+Tables are used to organize information in rows and columns.
+</p>
+
+<ul>
+<li>table creates a table.</li>
+<li>border="1" adds a border around the table.</li>
+<li>caption creates a table title.</li>
+<li>thead contains heading rows.</li>
+<li>tbody contains table data.</li>
+<li>tfoot contains summary information.</li>
+<li>tr creates a row.</li>
+<li>th creates a heading cell.</li>
+<li>td creates a data cell.</li>
+</ul>
+An Example of a table is shown above, which represents a weekly timetable with time slots and subjects for each day. The table includes a caption, header, body, and footer sections to organize the data effectively:
+<table border="1" bordercolor="White">
         <caption><B>My Time table</B></caption>
         <thead>
             <tr>
@@ -128,6 +147,28 @@
             </tr>
         </tfoot>
     </table>
+</div>
+<div class="section">
+
+<h2>2. Rowspan and Colspan</h2>
+
+<pre>
+&lt;td rowspan="2"&gt;Automata&lt;/td&gt;
+
+&lt;td colspan="5"&gt;&lt;/td&gt;
+</pre>
+
+<p>
+Rowspan makes a cell span multiple rows.
+Colspan makes a cell span multiple columns.
+</p>
+
+<ul>
+<li><strong>rowspan="2"</strong> makes the Automata cell occupy two rows.</li>
+<li><strong>colspan="5"</strong> makes an empty cell stretch across five columns.</li>
+</ul>
+
+</div>
 
 </body>
 </html>
